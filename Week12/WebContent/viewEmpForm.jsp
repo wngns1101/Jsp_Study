@@ -6,6 +6,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+	body{
+		text-align: center;
+	}
+</style>
 <body>
 	<h3>사원 정보 조회 화면</h3>
 	<form action="viewEmpQuery.jsp">
@@ -14,7 +19,7 @@
 		<input type="submit" value="조회">
 		<input type="reset" value="취소">		
 	</form>
-		<br>
+ 		<br>
 		<input type="button" onclick="location.href='menu.jsp'" value="메뉴화면">
 </body>
 </html>

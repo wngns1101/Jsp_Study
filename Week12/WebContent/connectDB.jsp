@@ -11,7 +11,7 @@
 <%
 	Connection conn = null;
 
-	String url = "jdbc:mysql://localhost:3306/jspDB?" + "useSSL=false&serverTimezone=UTC";
+	String url = "jdbc:mysql://localhost:3306/jspDB?";
 	String user = "root";
 	String pass = "????";
 

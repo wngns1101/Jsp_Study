@@ -9,6 +9,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+	body{
+		text-align: center;
+	}
+</style>
 <body>
 	<%@ include file="connectDB.jsp" %> <!-- 데이터베이스 커넥션 생성 -->
 	

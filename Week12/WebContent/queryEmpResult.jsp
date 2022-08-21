@@ -8,6 +8,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+	body{
+		text-align: center;
+	}
+</style>
 <body>
 	<table border="1" style="text-align: center;">
 		<tr><th colspan="5">사원 목록 조회</th></tr>
@@ -29,10 +34,9 @@
 		<%
 			}
 		%>
-			<br><br>
-			<form action="menu.jsp">
-				<input type="submit" value="메뉴화면">
-			</form>
+			<tr>
+				<td colspan="5"><input type="button" value="메뉴화면" onclick="location.href='menu.jsp'"></td>
+			</tr>
 	</table>
 </body>
 </html>
