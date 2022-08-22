@@ -14,7 +14,7 @@
 <body>
 	<h3>사원 정보 조회 화면</h3>
 	<form action="viewEmpQuery.jsp">
-		<p>조회할 사원 번호를 입력하세요:</p><input type="text" name="viewNO" autofocus="autofocus">
+		<p>조회할 사원 번호를 입력하세요:</p><input type="text" name="viewno" autofocus="autofocus">
 		<br><br>
 		<input type="submit" value="조회">
 		<input type="reset" value="취소">		
