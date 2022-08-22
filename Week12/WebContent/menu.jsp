@@ -16,7 +16,7 @@
 	<div class="menu">
 		<input type="button" onclick="location.href='queryEmp.jsp'" value="사원목록">
 		<input type="button" onclick="location.href='inputEmpForm.jsp'" value="사원등록">
-		<input type="button" onclick="location.href='queryEmpForm.jsp'" value="사원조회">
+		<input type="button" onclick="location.href='viewEmpForm.jsp'" value="사원조회">
 	</div>
 </body>
 </html>
