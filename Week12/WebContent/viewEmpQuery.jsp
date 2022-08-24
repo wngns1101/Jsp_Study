@@ -55,7 +55,7 @@
 		</table>
 		<br><br>
 		<input type = "button" value="회원정보수정" onclick="location.href='updateEmp.jsp'">
-		<input type = "button" value="회원정보삭제" onclick="location.href='menu.jsp'">
+		<input type = "button" value="회원정보삭제" onclick="location.href='deleteEmp.jsp'">
 		<input type = "button" value="돌아가기" onclick="location.href='menu.jsp'">
 <%
 	}
