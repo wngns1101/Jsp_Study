@@ -9,8 +9,8 @@
 <body>
 <%@ include file = "connectDB.jsp" %>
 <%
-	String empno = request.getParameter("updateno");
-	String empdept = request.getParameter("updatedept");
+	String empno = String.valueOf(session.getAttribute("no"));
+	String empdept = request.getParameter("updatecode");
 	String empjob = request.getParameter("updatejob");
 	int empsal = Integer.parseInt(request.getParameter("updatesal"));
 	
