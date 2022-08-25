@@ -22,7 +22,7 @@
 	String dbPass = "????";
 	
 	String sql = "select * from emp";
-	
+
 	//2. 데이터베이스 커넥션 생성
 	conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
 	

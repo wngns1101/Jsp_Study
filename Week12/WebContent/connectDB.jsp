@@ -13,7 +13,7 @@
 
 	String url = "jdbc:mysql://localhost:3306/jspDB?";
 	String user = "root";
-	String pass = "????";
+	String pass = "Wkrwjs4602!";
 
 	Class.forName("com.mysql.jdbc.Driver");
 	conn = DriverManager.getConnection(url, user, pass);
