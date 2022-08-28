@@ -5,6 +5,7 @@ import java.util.Date;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ControllerServlet
  */
-@WebServlet("/ControllerServlet")
+@WebServlet(urlPatterns="*.do", initParams= {@WebInitParam(name="config", value="/WEB-INF/commandHandler.properties")})
 public class ControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -43,6 +44,14 @@ public class ControllerServlet extends HttpServlet {
 
 	private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String type = request.getParameter("type");
+		
+		String command = request.getRequestURI();
+		// command = /week13/main.do
+		
+		command = command.substring(request.getContextPath().length()+1);
+		
+		//Contextpath = /week14 command = main.do
+		
 		Object resultObj = null;
 		
 		if(type==null || type.equals("greeting")) {
